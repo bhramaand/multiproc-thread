@@ -8,7 +8,10 @@
 
 name: Upload Python Package
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -26,7 +29,7 @@ jobs:
         python-version: '3.x'
     - name: Install dependencies
       run: |
-        python3 -m pip3 install --upgrade pip3
+        python3 -m pip install --upgrade pip
         pip3 install build
         pip3 install wheel
     - name: Build patch
