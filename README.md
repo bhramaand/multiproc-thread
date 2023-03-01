@@ -6,3 +6,9 @@ Python >= 3
 
 Supports
 Django
+
+Platform
+UNIX
+
+Might not behave properly on MacOS 
+Issue link: https://github.com/python/cpython/issues/77906

@@ -1,10 +1,11 @@
-from multiprocessing import Process, Manager, Lock, Value
+from multiprocessing import Process, Manager, Lock, Value, set_start_method
 from .utils.logger import error_logger, app_logger
 import os
 import threading
 import signal
 import time
 
+set_start_method('fork')
 manager = Manager()
 lock = Lock()
 process_pool = manager.dict()
