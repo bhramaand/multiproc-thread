@@ -9,7 +9,7 @@ setup(
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=LONG_DESCRIPTION,
-    packages=find_packages(include=['dist'], exclude=['build','multiproc']),
+    packages=find_packages(),
     install_requires=[],
     keywords=['python', 'parallel', 'processing', 'thread', 'threading', 'veritcal','scaling'],
     classifiers=[
